@@ -1,2 +1,2 @@
 # Backjoon-Programmers
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+프로그래머스와 백준 사이트를 이용하여 코딩테스트 문제를 풉니다
