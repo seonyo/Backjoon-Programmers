@@ -7,7 +7,6 @@ class Solution {
                 i = 1;
             }
             else{
-                System.out.println(lcm + " " + arr[i]);
                 lcm = getLcm(lcm, arr[i]);
             } 
         }
