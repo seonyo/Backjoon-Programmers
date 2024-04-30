@@ -1,16 +1,20 @@
 import java.util.*;
-class Solution{
-    public int solution(String s){
+class Solution
+{
+    public int solution(String s)
+    {
         Stack<Character> stack = new Stack<>();
+        stack.push(s.charAt(0));
         
-        for(int i=0; i<s.length(); i++){
-            if(!stack.empty() && stack.peek().equals(s.charAt(i))){
-                stack.pop();
-            } else {
+        for(int i=1; i<s.length(); i++){
+            if(stack.isEmpty())
                 stack.push(s.charAt(i));
-            }
+            else if(stack.peek() != s.charAt(i))
+                stack.push(s.charAt(i));
+            else
+                stack.pop();
         }
         
-        return stack.empty() ? 1 : 0;
+        return stack.isEmpty() ? 1 : 0;
     }
 }
